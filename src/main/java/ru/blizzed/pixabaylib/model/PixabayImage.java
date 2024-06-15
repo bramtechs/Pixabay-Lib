@@ -18,6 +18,7 @@ package ru.blizzed.pixabaylib.model;
 
 import java.io.Serializable;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 import com.google.gson.annotations.SerializedName;
@@ -88,6 +89,9 @@ public class PixabayImage implements Serializable {
     }
 
     public List<String> getTags() {
+        if (tags.isEmpty()) {
+            return Collections.emptyList();
+        }
         return Arrays.asList(tags.split(", "));
     }
 
