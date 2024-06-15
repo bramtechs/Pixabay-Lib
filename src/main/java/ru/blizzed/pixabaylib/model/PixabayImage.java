@@ -89,7 +89,7 @@ public class PixabayImage implements Serializable {
     }
 
     public List<String> getTags() {
-        if (tags.isEmpty()) {
+        if (tags == null || tags.isEmpty()) {
             return Collections.emptyList();
         }
         return Arrays.asList(tags.split(", "));
