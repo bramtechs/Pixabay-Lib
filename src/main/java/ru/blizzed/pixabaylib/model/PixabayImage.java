@@ -170,5 +170,100 @@ public class PixabayImage implements Serializable {
     public String getUserImageURL() {
         return userImageURL;
     }
-    
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public void setPageURL(String pageURL) {
+        this.pageURL = pageURL;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setTags(List<String> tags) {
+        this.tags = String.join(", ", tags);
+    }
+
+    public void setPreviewURL(String previewURL) {
+        this.previewURL = previewURL;
+    }
+
+    public void setPreviewWidth(long previewWidth) {
+        this.previewWidth = previewWidth;
+    }
+
+    public void setPreviewHeight(long previewHeight) {
+        this.previewHeight = previewHeight;
+    }
+
+    public void setWebformatURL(String webformatURL) {
+        this.webformatURL = webformatURL;
+    }
+
+    public void setWebformatWidth(int webformatWidth) {
+        this.webformatWidth = webformatWidth;
+    }
+
+    public void setWebformatHeight(int webformatHeight) {
+        this.webformatHeight = webformatHeight;
+    }
+
+    public void setLargeImageURL(String largeImageURL) {
+        this.largeImageURL = largeImageURL;
+    }
+
+    public void setFullHDURL(String fullHDURL) {
+        this.fullHDURL = fullHDURL;
+    }
+
+    public void setImageURL(String imageURL) {
+        this.imageURL = imageURL;
+    }
+
+    public void setImageWidth(int imageWidth) {
+        this.imageWidth = imageWidth;
+    }
+
+    public void setImageHeight(int imageHeight) {
+        this.imageHeight = imageHeight;
+    }
+
+    public void setImageSize(int imageSize) {
+        this.imageSize = imageSize;
+    }
+
+    public void setViews(long views) {
+        this.views = views;
+    }
+
+    public void setDownloads(long downloads) {
+        this.downloads = downloads;
+    }
+
+    public void setFavorites(long favorites) {
+        this.favorites = favorites;
+    }
+
+    public void setLikes(long likes) {
+        this.likes = likes;
+    }
+
+    public void setComments(long comments) {
+        this.comments = comments;
+    }
+
+    public void setUserId(long userId) {
+        this.userId = userId;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
+    }
+
+    public void setUserImageURL(String userImageURL) {
+        this.userImageURL = userImageURL;
+    }
 }
